@@ -1,0 +1,3 @@
+[submodule "modules/ftc_local_planner"]
+	path = modules/ftc_local_planner
+	url = https://github.com/ClemensElflein/ftc_local_planner
