@@ -1,3 +1,10 @@
 [submodule "modules/ftc_local_planner"]
 	path = modules/ftc_local_planner
 	url = https://github.com/ClemensElflein/ftc_local_planner
+        branch=main
+[submodule "modules/ROSMower"]
+	path = modules/ROSMower
+	url = https://github.com/HoverMower/ROSMower
+[submodule "modules/rosmower_msgs"]
+	path = modules/rosmower_msgs
+	url = https://github.com/HoverMower/rosmower_msgs
