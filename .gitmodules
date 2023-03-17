@@ -8,3 +8,20 @@
 [submodule "modules/rosmower_msgs"]
 	path = modules/rosmower_msgs
 	url = https://github.com/HoverMower/rosmower_msgs
+[submodule "modules/Slic3r"]
+	path = modules/Slic3r
+	url = https://github.com/HoverMower/Slic3r
+[submodule "modules/slic3r_coverage_planner"]
+	path = modules/slic3r_coverage_planner
+	url = https://github.com/HoverMower/slic3r_coverage_planner
+[submodule "modules/oled_display_node"]
+	path = modules/oled_display_node
+	url = https://github.com/HoverMower/oled_display_node
+[submodule "modules/ds4_driver"]
+	path = modules/ds4_driver
+	url = https://github.com/naoki-mizuno/ds4_driver
+	branch = melodic-devel
+[submodule "modules/ds4drv"]
+	path = modules/ds4drv
+	url = https://github.com/naoki-mizuno/ds4drv
+	branch = devel
