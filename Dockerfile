@@ -48,3 +48,5 @@ WORKDIR /home/ubuntu/catkin_ws
 # build catkin workspace
 #RUN /bin/bash -c '. /opt/ros/melodic/setup.bash; cd /home/ubuntu/catkin_ws; catkin_make'
 
+RUN echo "source /home/ubuntu/catkin_ws/devel/setup.bash" >> ~/.bashrc
+RUN echo "source /home/ubuntu/data/catkin_ws/devel/setup.bash" >> ~/.bashrc
