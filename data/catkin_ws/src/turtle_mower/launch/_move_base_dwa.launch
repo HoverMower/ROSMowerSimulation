@@ -10,17 +10,14 @@
     <rosparam file="$(find turtle_mower)/params/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find turtle_mower)/params/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find turtle_mower)/params/move_base_flex.yaml" command="load"/>
-    <rosparam file="$(find turtle_mower)/params/ftc_local_planner.yaml" command="load" /> 
     <rosparam file="$(find turtle_mower)/params/free_move_local_planner.yaml" command="load" />
-    <rosparam file="$(find turtle_mower)/params/docking_ftc_local_planner.yaml" command="load" />
     <rosparam file="$(find turtle_mower)/params/global_planner_params.yaml" command="load" />
     <rosparam file="$(find turtle_mower)/params/dwa_local_planner_params.yaml" command="load" />
-    <rosparam file="$(find turtle_mower)/params/asr_local_planner.yaml" command="load" />
   </node>
 
   <node name="move_base_legacy_relay" pkg="mbf_costmap_nav" type="move_base_legacy_relay.py">
     <remap from="odom" to="$(arg odom_topic)"/>
-    <param name="base_local_planner" value="FTCPlanner" />
+    <param name="base_local_planner" value="DWAPlannerROS" />
     <param name="base_global_planner" value="GlobalPlanner" />
   </node>
 

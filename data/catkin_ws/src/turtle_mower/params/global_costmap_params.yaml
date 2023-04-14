@@ -12,3 +12,5 @@ global_costmap:
   height: 40.0  
   origin_x: -20.0
   origin_y: -20.0  
+global_costmap/obstacle_layer:
+    enabled: true

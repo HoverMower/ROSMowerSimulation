@@ -32,7 +32,7 @@ def client():
         
         pathSrv.fill_type = 0 # linear
         #['fill_type', 'angle', 'distance', 'outer_offset', 'outline_count', 'outline', 'holes']
-        resp1 = slic3r_proxy(0, 20, 0.5, 0, 3, p, holes) 
+        resp1 = slic3r_proxy(0, 20.0, 0.2, 0, 3, p, holes) 
         nav_path = Path()
         header = Header()
         rate = rospy.Rate(1) # 1hz

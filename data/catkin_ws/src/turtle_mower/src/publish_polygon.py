@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # license removed for brevity
+#
+# Program publishes a simple polygon to a given topic. Can be visualized in rViz
+#
 import rospy
 from geometry_msgs.msg import Polygon, PolygonStamped, Point32
 from std_msgs.msg import Header
