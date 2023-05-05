@@ -8,9 +8,9 @@ global_costmap:
   rolling_window: false
   resolution: 0.10
   #map_topic: mower_map_service/map
-  width: 40.0
-  height: 40.0  
-  origin_x: -20.0
-  origin_y: -20.0  
+  width: 20.0
+  height: 20.0  
+  origin_x: -10.0
+  origin_y: -10.0  
 global_costmap/obstacle_layer:
-    enabled: true
+    enabled: false

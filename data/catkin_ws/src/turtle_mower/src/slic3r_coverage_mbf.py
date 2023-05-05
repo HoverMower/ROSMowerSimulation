@@ -33,23 +33,44 @@ def client():
         pathSrv.angle = 20
         pathSrv.outline_count = 2
         p = Polygon() # outline
-        holes = []
+        holes= []
+        hole = Polygon()
+        hole.points = [
+            Point32(x=2, y=1),
+            Point32(x=-2, y=1),
+            Point32(x=-2, y=0),
+            Point32(x=-1, y=1),
+            Point32(x=2, y=2),]
+        holes.append(hole)  
+        p.points = [
+            Point32(x=0, y=5),
+            Point32(x=4, y=4),
+            Point32(x=4, y=1),
+            Point32(x=3, y=-2),
+            Point32(x=1, y=-3),
+            Point32(x=-2, y=0),
+            Point32(x=-3, y=-1.3),
+            Point32(x=-4, y=-4),
+            Point32(x=-3, y=-2),
+            Point32(x=-2, y=-1),
+            Point32(x=-1, y=3),
+            Point32(x=0, y=5)]
         #p.points = [Point32(x=1.0, y=1.0),
         #            Point32(x=-1.0, y=1.0),
         #            Point32(x=-1.0, y=-1.0),
         #            Point32(x=1.0, y=-1.0),
         #            Point32(x=1.0, y=1.0)]
-        p.points = [Point32(x=-0.1, y=1.8),
-                    Point32(x=-1.2, y=0.5),
-                    Point32(x=-1.8, y=0.0),
-                    Point32(x=-1.6, y=-0.5),
-                    Point32(x=1.0, y=-1.0),
-                    Point32(x=1.1, y=-0.6),
-                    Point32(x=1.8, y=0.0),
-                    Point32(x=1.6, y=0.6),
-                    Point32(x=0.1, y=1.5),
-                    Point32(x=0.3, y=1.7),
-                    Point32(x=-1.1, y=1.8)]                    
+        #p.points = [Point32(x=-0.1, y=1.8),
+        #            Point32(x=-1.2, y=0.5),
+        #            Point32(x=-1.8, y=0.0),
+        #            Point32(x=-1.6, y=-0.5),
+        #            Point32(x=1.0, y=-1.0),
+        #            Point32(x=1.1, y=-0.6),
+        #            Point32(x=1.8, y=0.0),
+        #            Point32(x=1.6, y=0.6),
+        #            Point32(x=0.1, y=1.5),
+        #            Point32(x=0.3, y=1.7),
+        #            Point32(x=-1.1, y=1.8)]                    
         pathSrv.outline = p
         
         pathSrv.fill_type = 0 # linear
