@@ -23,5 +23,5 @@ obstacles_layer:
 
 
 inflater_layer:
- inflation_radius: 0.1 # was 0.1
+ inflation_radius: 0.2 # was 0.1
  cost_scaling_factor: 1.0 # was 0.5
